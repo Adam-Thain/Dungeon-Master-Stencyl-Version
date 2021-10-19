@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="5" id="0">
+        <receiver-1-23 comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <code-long comment="false" x="26" y="45">
+                    <int id="0" val="Engine.engine.root.scaleX = __Multiplier;&#10;Engine.engine.root.scaleY = __Multiplier;&#10;Engine.screenScaleX = __Multiplier;&#10;Engine.screenScaleY = __Multiplier;&#10;Engine.screenWidth = (Std.int(scripts.MyAssets.stageWidth * (1 / __Multiplier)));&#10;Engine.screenHeight = (Std.int(scripts.MyAssets.stageHeight * (1 / __Multiplier)));&#10;Engine.engine.master.getChildAt(0).width = Engine.screenWidth;&#10;Engine.engine.master.getChildAt(0).height = Engine.screenHeight;&#10;Engine.engine.root.scrollRect = new nme.geom.Rectangle(0,0,Engine.screenWidth,Engine.screenHeight);"/>
+                </code-long>
+            </group>
+            <get-byobval-6-23-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-1-23>
+    </group>
+    <group eventID="5" id="-1"/>
+</groups>

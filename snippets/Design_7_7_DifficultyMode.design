@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="Set game attribute"/>
+                </comment-short>
+                <if comment="false" x="26" y="60">
+                    <group eventID="2" id="-1">
+                        <set-val-7-1 comment="false" x="37" y="85">
+                            <tostring comment="false" id="0" x="0" y="0">
+                                <get-val-7-3 comment="false" id="0" x="0" y="0"/>
+                            </tostring>
+                        </set-val-7-1>
+                    </group>
+                    <get-val-7-2 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <comment-short comment="false" x="26" y="127">
+                    <int id="0" val="Check if difficulty has changed"/>
+                </comment-short>
+                <if comment="false" x="26" y="147">
+                    <group eventID="2" id="-1">
+                        <say-this comment="false" x="37" y="182">
+                            <int id="0" val="UpdateDifficulty"/>
+                        </say-this>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <get-val-7-1 comment="false" id="0" x="0" y="0"/>
+                            <get-val-7-4 comment="false" id="1" x="0" y="0"/>
+                        </eq>
+                    </not>
+                </if>
+                <set-val-7-4 comment="false" x="26" y="214">
+                    <get-val-7-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-7-4>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <comment-short comment="false" x="26" y="40">
+                    <int id="0" val="Set Index"/>
+                </comment-short>
+                <repeat comment="false" x="26" y="60">
+                    <group eventID="3" id="-1">
+                        <if comment="false" x="37" y="90">
+                            <group eventID="3" id="-1">
+                                <set-val-7-6 comment="false" x="48" y="135">
+                                    <loopindex comment="false" id="0" x="0" y="0"/>
+                                </set-val-7-6>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-7-1 comment="false" id="0" x="0" y="0"/>
+                                <get-item comment="false" id="1" x="0" y="0">
+                                    <str-split comment="false" id="0" x="0" y="0">
+                                        <get-item comment="false" id="0" x="0" y="0">
+                                            <get-val-7-5 comment="false" id="0" x="0" y="0"/>
+                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                        </get-item>
+                                        <int id="1" val="/"/>
+                                    </str-split>
+                                    <int id="1" val="0"/>
+                                </get-item>
+                            </eq>
+                        </if>
+                    </group>
+                    <length-list comment="false" id="0" x="0" y="0">
+                        <get-val-7-5 comment="false" id="0" x="0" y="0"/>
+                    </length-list>
+                </repeat>
+                <comment-short comment="false" x="26" y="184">
+                    <int id="0" val="Set attributes"/>
+                </comment-short>
+                <for-each comment="false" x="26" y="204">
+                    <group eventID="3" id="-1">
+                        <if comment="false" x="37" y="239">
+                            <group eventID="3" id="-1">
+                                <set-attribute comment="false" x="48" y="287">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-item comment="false" id="1" x="0" y="0">
+                                        <str-split comment="false" id="0" x="0" y="0">
+                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val=","/>
+                                        </str-split>
+                                        <int id="1" val="0"/>
+                                    </get-item>
+                                    <get-item comment="false" id="2" x="0" y="0">
+                                        <str-split comment="false" id="0" x="0" y="0">
+                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val=","/>
+                                        </str-split>
+                                        <int id="1" val="1"/>
+                                    </get-item>
+                                    <get-item comment="false" id="3" x="0" y="0">
+                                        <str-split comment="false" id="0" x="0" y="0">
+                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val=","/>
+                                        </str-split>
+                                        <int id="1" val="2"/>
+                                    </get-item>
+                                </set-attribute>
+                            </group>
+                            <has-snippet comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <get-item comment="false" id="1" x="0" y="0">
+                                    <str-split comment="false" id="0" x="0" y="0">
+                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val=","/>
+                                    </str-split>
+                                    <int id="1" val="0"/>
+                                </get-item>
+                            </has-snippet>
+                        </if>
+                    </group>
+                    <str-split comment="false" id="0" x="0" y="0">
+                        <get-item comment="false" id="0" x="0" y="0">
+                            <get-val-7-5 comment="false" id="0" x="0" y="0"/>
+                            <get-val-7-6 comment="false" id="1" x="0" y="0"/>
+                        </get-item>
+                        <int id="1" val="/"/>
+                    </str-split>
+                </for-each>
+            </group>
+            <int id="0" val="UpdateDifficulty"/>
+        </event-custom>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receiver-1-24 comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-val-7-1 comment="false" x="26" y="45">
+                    <get-byobval-7-24-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-7-1>
+                <say-this comment="false" x="26" y="70">
+                    <int id="0" val="UpdateDifficulty"/>
+                </say-this>
+            </group>
+            <get-byobval-7-24-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-7-24-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-24>
+    </group>
+    <group eventID="4" id="-1">
+        <get-byobval-7-24-1 comment="false" x="0" y="0"/>
+        <get-byobval-7-24-0 comment="false" x="0" y="0"/>
+    </group>
+</groups>

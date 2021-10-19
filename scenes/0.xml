@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="4" desc="" eventsnippetid="9" extheight="576" extwidth="1152" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="512" id="0" name="Level 1" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1088">
+    <layers>
+        <color-bg blue="0" green="0" red="0"/>
+        <layer blendMode="normal" color="255,0,255" id="3" locked="false" name="Background" opacity="100" order="3" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="0,255,0" id="1" locked="false" name="Floor" opacity="100" order="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Characters" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="64,64,64" id="2" locked="false" name="Foreground" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="17" name="Player 1" order="0" sx="1.0" sy="1.0" x="384" y="224" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain>
+        <p pts="16,672.0,160.0,672.0,32.0,1056.0,32.0,1056.0,448.0,1088.0,448.0,1088.0,0.0,640.0,0.0,640.0,128.0,480.0,128.0,480.0,0.0,0.0,0.0,0.0,448.0,32.0,448.0,32.0,32.0,448.0,32.0,448.0,160.0" x="0.0" y="0.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>

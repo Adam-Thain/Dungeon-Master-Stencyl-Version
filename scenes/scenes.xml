@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scenes>
+    <scene desc="" id="0" name="Level 1"/>
+    <scene desc="" id="1" name="Title Screen"/>
+    <scene desc="" id="2" name="Level Select"/>
+    <scene desc="" id="3" name="Level 2"/>
+    <scene desc="" id="4" name="Level 3"/>
+    <scene desc="" id="5" name="Ending"/>
+    <scene desc="" id="6" name="Game Over"/>
+    <scene desc="" id="7" name="Options"/>
+    <scene desc="" id="8" name="Credits"/>
+    <scene desc="" id="9" name="Level 4"/>
+    <scene desc="" id="10" name="Level 5"/>
+</scenes>

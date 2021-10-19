@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <code-long comment="false" x="26" y="40">
+                    <int id="0" val="Lib.stage.addEventListener(KeyboardEvent.KEY_DOWN, keyDownHandler);&#10;"/>
+                </code-long>
+                <set-val-10-4 comment="false" x="26" y="230">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-10-4>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-custom-import comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <code-long comment="false" x="26" y="40">
+                    <int id="0" val="import nme.events.KeyboardEvent;&#10;import nme.Lib;&#10;"/>
+                </code-long>
+            </group>
+        </event-custom-import>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-custom-code comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <code-long comment="false" x="26" y="40">
+                    <int id="0" val="&#9;public function keyDownHandler(event:KeyboardEvent):Void&#10;&#9;{&#10;&#9;&#9;if(_isFocus &amp;amp;&amp;amp; event.charCode == 27 || event.charCode == 13) {&#10;&#9;&#9;&#9;_isFocus = false;&#9;&#10;&#9;&#9;}&#10;&#9;&#9;else if(_isFocus &amp;amp;&amp;amp; event.charCode == 8) {&#10;&#9;&#9;&#9;_text = _text.substr(0, -1);&#10;&#9;&#9;}&#10;&#9;&#9;else if(_isFocus &amp;amp;&amp;amp; _text.length &amp;lt; _maxCharacteres){&#10;&#9;&#9;&#9;_text = _text + String.fromCharCode(event.charCode);&#9;&#9;&#10;&#9;&#9;}&#10;&#9;}"/>
+                </code-long>
+            </group>
+        </event-custom-code>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="var" id="0" vid="6"/>
+                </set-font-new>
+                <if comment="false" x="26" y="67">
+                    <group eventID="4" id="-1">
+                        <draw-text comment="false" x="37" y="92">
+                            <str-combine comment="false" id="0" x="0" y="0">
+                                <get-val-10-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="|"/>
+                            </str-combine>
+                            <get-val-10-2 comment="false" id="1" x="0" y="0"/>
+                            <get-val-10-3 comment="false" id="2" x="0" y="0"/>
+                        </draw-text>
+                    </group>
+                    <get-val-10-4 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="134">
+                    <group eventID="4" id="-1">
+                        <draw-text comment="false" x="37" y="154">
+                            <get-val-10-1 comment="false" id="0" x="0" y="0"/>
+                            <get-val-10-2 comment="false" id="1" x="0" y="0"/>
+                            <get-val-10-3 comment="false" id="2" x="0" y="0"/>
+                        </draw-text>
+                    </group>
+                </else>
+            </group>
+        </draw>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-val-10-4 comment="false" x="26" y="42">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-10-4>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="2"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-mouse-press-release comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-val-10-4 comment="false" x="26" y="42">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-10-4>
+            </group>
+            <int id="0" val="0"/>
+        </event-mouse-press-release>
+    </group>
+    <group eventID="6" id="-1"/>
+</groups>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-12-1 comment="false" x="26" y="40">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="2"/>
+                    </get-xy>
+                </set-val-12-1>
+                <set-val-12-2 comment="false" x="26" y="73">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="3"/>
+                    </get-xy>
+                </set-val-12-2>
+                <set-val-12-3 comment="false" x="26" y="106">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-12-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </plus>
+                </set-val-12-3>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-12-1 comment="false" x="26" y="40">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-12-1 comment="false" id="0" x="0" y="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <get-val-12-1 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                            <get-val-12-3 comment="false" id="1" x="0" y="0"/>
+                        </div>
+                    </plus>
+                </set-val-12-1>
+                <set-val-12-2 comment="false" x="26" y="88">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-12-2 comment="false" id="0" x="0" y="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <get-val-12-2 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                            <get-val-12-3 comment="false" id="1" x="0" y="0"/>
+                        </div>
+                    </plus>
+                </set-val-12-2>
+                <camera-move comment="false" x="26" y="136">
+                    <get-val-12-1 comment="false" id="0" x="0" y="0"/>
+                    <get-val-12-2 comment="false" id="1" x="0" y="0"/>
+                </camera-move>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

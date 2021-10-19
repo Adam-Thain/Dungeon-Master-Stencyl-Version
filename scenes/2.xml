@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="14" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="480" id="2" name="Level Select" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="0" green="0" red="0"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="39" name="LevelSelectHeader 1" order="0" sx="1.0" sy="1.0" x="160" y="32" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="47" name="Level1Button 2" order="1" sx="1.0" sy="1.0" x="224" y="128" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="49" name="Level2Button 3" order="2" sx="1.0" sy="1.0" x="224" y="192" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="51" name="Level3Button 4" order="3" sx="1.0" sy="1.0" x="224" y="256" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="53" name="Level4Button 5" order="4" sx="1.0" sy="1.0" x="224" y="320" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="55" name="Level5Button 6" order="5" sx="1.0" sy="1.0" x="224" y="384" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+    <atlases members="" retainAtlases="true"/>
+</scene>

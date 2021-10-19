@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <code-long comment="false" x="26" y="40">
+                    <int id="0" val="context = new LoaderContext(false, ApplicationDomain.currentDomain);&#10;loader = new Loader ();&#10;loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onSwfLoaded);&#10;loader.loadBytes(new LoadingAnimation(), context);"/>
+                </code-long>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-custom-code comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <code-long comment="false" x="26" y="40">
+                    <int id="0" val="var context:LoaderContext = null;&#10;var loader:Loader = null;"/>
+                </code-long>
+            </group>
+        </event-custom-code>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-custom-import comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <code-long comment="false" x="26" y="40">
+                    <int id="0" val="#if flash&#10;import flash.system.ApplicationDomain;&#10;import flash.system.LoaderContext;&#10;#end&#10;import nme.display.Loader;&#10;import nme.display.MovieClip;&#10;import nme.display.DisplayObjectContainer;&#10;import nme.display.LoaderInfo;&#10;import nme.events.MouseEvent;&#10;&#10;#if flash&#10;import flash.Lib;&#10;#end&#10;import nme.net.URLRequest;&#10;&#10;@:file(&amp;quot;C:/Users/Justin/Desktop/CA Intro properr font.swf&amp;quot;)&#10;class LoadingAnimation extends flash.utils.ByteArray{}"/>
+                </code-long>
+            </group>
+        </event-custom-import>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="7" id="0">
+        <event-custom-code comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <code-long comment="false" x="26" y="40">
+                    <int id="0" val="function loadSite(e:MouseEvent):Void&#10;{&#10;&#9;var myLink:URLRequest = new URLRequest(&amp;quot;http://www.cosmoarcade.com/&amp;quot;);&#10;&#9;flash.Lib.getURL(myLink, &amp;quot;_blank&amp;quot;);&#10;}"/>
+                </code-long>
+            </group>
+        </event-custom-code>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <event-custom-code comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <code-long comment="false" x="26" y="40">
+                    <int id="0" val="function onSwfLoaded(event:Event):Void&#10;{&#10;&#9;Engine.engine.master.addChild(loader);&#10;&#9;Engine.engine.master.addEventListener(MouseEvent.CLICK, loadSite);&#10;&#10;&#9;var doc:DisplayObjectContainer = cast(cast(event.target, LoaderInfo).content, DisplayObjectContainer);&#10;&#9;//doc.addEventListener(Event.ENTER_FRAME, onENTER_FRAME);&#10;&#9;startLater(doc);&#10;}"/>
+                </code-long>
+            </group>
+        </event-custom-code>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="10" id="0">
+        <event-custom-code comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <code-long comment="false" x="26" y="40">
+                    <int id="0" val="function onENTER_FRAME(evt:Event):Void&#10;{&#10;&#9;var playermc:MovieClip = cast(evt.target, MovieClip);&#10;&#9;if(playermc.currentFrame == playermc.totalFrames)&#10;&#9;{&#10;&#9;&#9;onSwfCompleted();&#10;&#9;}&#10;}"/>
+                </code-long>
+            </group>
+        </event-custom-code>
+    </group>
+    <group eventID="10" id="-1"/>
+    <group eventID="11" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="11" id="-1">
+                <custom-code comment="false" x="26" y="40">
+                    <int id="0" val="Engine.engine.master.removeChild(loader);"/>
+                </custom-code>
+                <custom-code comment="false" x="26" y="60">
+                    <int id="0" val="Engine.engine.master.removeEventListener(MouseEvent.CLICK, loadSite);"/>
+                </custom-code>
+                <custom-code comment="false" x="26" y="80">
+                    <int id="0" val="loader.unloadAndStop();"/>
+                </custom-code>
+                <dolater comment="false" x="26" y="100">
+                    <group eventID="11" id="-1">
+                        <scene-change-through comment="false" x="37" y="127">
+                            <scene eid="1" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1.5"/>
+                        </scene-change-through>
+                    </group>
+                    <int id="0" val=".5"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="onSwfCompleted"/>
+        </event-custom>
+    </group>
+    <group eventID="11" id="-1"/>
+    <group eventID="12" id="0">
+        <event-custom-code comment="false" x="15" y="15">
+            <group eventID="12" id="-1">
+                <custom-code comment="false" x="26" y="40">
+                    <int id="0" val="function startLater(doc:DisplayObjectContainer):Void{"/>
+                </custom-code>
+                <code-long comment="false" x="26" y="60">
+                    <int id="0" val="if(Std.is(doc, MovieClip))&#10;{&#10;&#9;cast(doc, MovieClip).stop();&#10;}"/>
+                </code-long>
+                <dolater comment="false" x="26" y="250">
+                    <group eventID="12" id="-1">
+                        <code-long comment="false" x="37" y="277">
+                            <int id="0" val="if(Std.is(doc, MovieClip))&#10;{&#10;&#9;var mc:MovieClip = cast(doc, MovieClip);&#10;&#9;mc.play();&#10;&#9;mc.addFrameScript(mc.totalFrames-1, onSwfCompleted);&#10;}"/>
+                        </code-long>
+                    </group>
+                    <int id="0" val=".5"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <custom-code comment="false" x="26" y="479">
+                    <int id="0" val="}"/>
+                </custom-code>
+            </group>
+        </event-custom-code>
+    </group>
+    <group eventID="12" id="-1"/>
+</groups>

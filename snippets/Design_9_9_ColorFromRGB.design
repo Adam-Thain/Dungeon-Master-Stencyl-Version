@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <receiver-4-25 comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <return comment="false" x="26" y="45">
+                    <code-short comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Utils.getColorRGB(Std.int(__Red),Std.int(__Green),Std.int(__Blue))"/>
+                    </code-short>
+                </return>
+            </group>
+            <get-byobval-9-25-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-9-25-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-9-25-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-4-25>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
